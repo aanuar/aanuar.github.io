@@ -7,6 +7,18 @@
 <body class="bodyimage">
 
 
-	
+	<form>
+		<input id="txt" type="text" />
+		<button id="btn">Click me</button>
+	</form>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<script>
+		$('#btn').on('click', function(e){
+			e.preventDefault();
+			$('#txt').val('Here is a tezt');
+			$('body').addClass('bodyimage');
+		});
+	</script>
 </body>
 </html>
